@@ -1,0 +1,176 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: 'Open sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  color: hsl(243, 87%, 12%);
+  line-height: 1.5;
+}
+
+p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+  color: hsl(243, 87%, 12%);
+  line-height: 1.5;
+}
+
+.blue-btn {
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Open sans', sans-serif;
+  border: 1px solid hsl(224, 93%, 58%);
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+/*** Top section ***/
+.logo-and-nav {
+  padding: 10px;
+}
+
+.logo-header {
+  float: left;
+  width: 50%;
+}
+
+.logo-header img {
+  width: 45%;
+}
+
+.logo-and-nav nav {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.logo-and-nav nav a {
+text-decoration: none;
+margin-left: 15px;
+font-size: 0.8em;
+font-family: 'Raleway', sans-serif;
+color: hsl(243, 87%, 12%);
+}
+
+.header-illustration img {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.header-illustration img {
+  width: 100%;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text input {
+  width: 93%;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 3px;
+  font-family: 'Open sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.header-text button {
+  width: 93%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 678px) {
+  h1 {
+    font-size: 2.1em;
+  }
+  .logo-and-nav {
+    padding: 60px;
+  }
+  .logo-header img {
+    width: auto;
+  }
+  .logo-and-nav nav a {
+  margin-left: 40px;
+  }
+
+  header {
+    margin-bottom: 80px;
+  }
+
+
+  .header-illustration img{
+    margin: 0;
+  }
+
+
+
+  .header-text input {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  .header-text button {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width:1024px){
+  h1 {
+    font-size: 2.1em;
+  }
+  .logo-and-nav {
+    padding: 60px;
+  }
+  .logo-header img {
+    width: auto;
+  }
+  .logo-and-nav nav a {
+  margin-left: 40px;
+  }
+
+  header {
+    margin-bottom: 80px;
+  }
+
+  .header-illustration {
+    float: right;
+    width: 50%;
+  }
+  .header-illustration img{
+    margin: 0;
+  }
+
+  .header-text {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 100px 80px 0 80px;
+  }
+
+  .header-text input {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  .header-text button {
+    width: 30%;
+  }
+}
