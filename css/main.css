@@ -1,3 +1,4 @@
+/*** Variables ***/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -18,26 +19,32 @@ html {
 }
 
 h1 {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-weight: bold;
   font-size: 1.7em;
-  color: hsl(243, 87%, 12%);
+  color: #070439;
   line-height: 1.5;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  color: #070439;
+}
+
 p {
-  font-family: 'Open sans', sans-serif;
-  font-size: 1em;
-  color: hsl(243, 87%, 12%);
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9em;
+  color: #070439;
   line-height: 1.5;
 }
 
 .blue-btn {
-  background-color: hsl(224, 93%, 58%);
-  color: #fff;
+  background-color: #3065f8;
+  color: #f6f6fe;
   font-size: 1em;
-  font-family: 'Open sans', sans-serif;
-  border: 1px solid hsl(224, 93%, 58%);
+  font-family: "Open sans", sans-serif;
+  border: 1px solid #3065f8;
   border-radius: 3px;
   padding: 10px 20px;
 }
@@ -51,7 +58,6 @@ p {
   float: left;
   width: 50%;
 }
-
 .logo-header img {
   width: 45%;
 }
@@ -61,20 +67,18 @@ p {
   width: 50%;
   text-align: right;
 }
-
 .logo-and-nav nav a {
-text-decoration: none;
-margin-left: 15px;
-font-size: 0.8em;
-font-family: 'Raleway', sans-serif;
-color: hsl(243, 87%, 12%);
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 0.8em;
+  font-family: "Raleway", sans-serif;
+  color: #070439;
 }
 
-.header-illustration img {
+.header-illustration {
   margin-top: 60px;
   margin-bottom: 20px;
 }
-
 .header-illustration img {
   width: 100%;
 }
@@ -82,61 +86,77 @@ color: hsl(243, 87%, 12%);
 .header-text {
   text-align: center;
 }
-
 .header-text input {
   width: 93%;
   font-size: 1em;
   padding: 10px 20px;
-  border: 1px solid hsl(243, 87%, 12%);
+  border: 1px solid #070439;
   border-radius: 3px;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   margin-bottom: 20px;
 }
-
 .header-text button {
   width: 93%;
   margin-bottom: 20px;
 }
 
-
 /*** Middle section ***/
-.top-curve-illustration {
-
-}
-
-
-.illustrations img {
+.illustration1 {
   display: block;
-}
-
-.illustration-bg {
-  background-color: #F8F8FE;
-}
-.illustration2 {
   width: 100%;
 }
 
-/*** Media queries ***/
+.middle-section-bg {
+  background-color: #f6f6fe;
+}
 
+.illustration2-container {
+  padding: 40px 20px;
+}
+.illustration2-container img {
+  width: 100%;
+}
+
+.middle-section-text h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.middle-section-text p {
+  color: #585989;
+}
+.middle-section-text a {
+  text-decoration: none;
+  color: #3c9f8f;
+  font-family: "Open sans", sans-serif;
+}
+.middle-section-text .quote {
+  background-color: #FFF;
+}
+
+/*** Media queries ***/
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 2.1em;
   }
+
   .logo-and-nav {
     padding: 60px;
   }
+
   .logo-header img {
     width: auto;
   }
+
   .logo-and-nav nav a {
-  margin-left: 40px;
+    margin-left: 40px;
   }
 
   header {
     margin-bottom: 80px;
   }
 
-  .header-illustration img{
+  .header-illustration img {
     margin: 0;
   }
 
@@ -152,9 +172,8 @@ color: hsl(243, 87%, 12%);
   .header-text button {
     width: 30%;
   }
-
-
-@media only screen and (min-width:1440px){
+}
+@media only screen and (min-width: 1440px) {
   .header-illustration {
     float: right;
     width: 50%;
@@ -167,3 +186,5 @@ color: hsl(243, 87%, 12%);
     padding: 100px 80px 0 80px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
