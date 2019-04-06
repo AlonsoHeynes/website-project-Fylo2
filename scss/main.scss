@@ -137,14 +137,60 @@ p {
   p {
     color: $desaturatedBlue;
   }
-  a {
-    text-decoration: none;
-    color: $moderateCyan;
-    font-family: $fontBody;
+  .anchor-tag {
+    text-align: center;
+    border-bottom: 1px solid $moderateCyan;
+    width: 53%;
+    margin: 40px auto;
+    a {
+      text-decoration: none;
+      color: $moderateCyan;
+      font-family: $fontBody;
+      i {
+        color: #FFF;
+        background-color: $moderateCyan;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        font-size: 0.6em;
+        padding: 3px;
+        margin-left: 5px;
+      }
+    }
   }
   .quote {
     background-color: #FFF;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(221,221,221,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(221,221,221,1);
+    box-shadow: 0px 0px 5px 0px rgba(221,221,221,1);
+    span {
+      display: block;
+      font-size: 3.5em;
+      font-weight: bold;
+      font-family: $fontOthers;
+    }
+    p {
+      font-size: 0.8em;
+      margin-bottom: 20px;
+      margin-top: 0;
+      color: $darkBlue;
+    }
+    img {
+      border-radius: 50%;
+      width: 20%;
+      float: left;
+      margin-right: 10px;
+    }
+    p:nth-child(3){
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
   }
+
 }
 
 /*** Media queries ***/
