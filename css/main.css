@@ -117,6 +117,9 @@ p {
   width: 100%;
 }
 
+.middle-section-text {
+  padding-bottom: 40px;
+}
 .middle-section-text h2 {
   text-align: center;
   margin-top: 40px;
@@ -178,6 +181,29 @@ p {
   margin-bottom: 0;
 }
 
+.early-acces {
+  background-color: #585989;
+  color: #FFF;
+  text-align: center;
+  padding: 40px 20px;
+}
+.early-acces p, .early-acces h2 {
+  color: #FFF;
+}
+.early-acces input {
+  width: 93%;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 1px solid #585989;
+  border-radius: 3px;
+  font-family: "Open sans", sans-serif;
+  margin-bottom: 20px;
+}
+.early-acces button {
+  width: 93%;
+  margin-bottom: 20px;
+}
+
 /*** Media queries ***/
 @media only screen and (min-width: 768px) {
   h1 {
@@ -217,6 +243,35 @@ p {
     width: 30%;
   }
 }
+.footer-site {
+  background-color: #070439;
+  font-family: "Open sans", sans-serif;
+  color: #FFF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-site ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-site ul li {
+  margin-bottom: 15px;
+}
+.footer-site ul li img {
+  margin: 0 10px;
+}
+.footer-site .left {
+  margin-bottom: 40px;
+}
+.footer-site a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  margin-bottom: 15px;
+}
+
 @media only screen and (min-width: 1440px) {
   .header-illustration {
     float: right;

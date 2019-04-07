@@ -129,6 +129,7 @@ p {
 }
 
 .middle-section-text {
+  padding-bottom: 40px;
   h2 {
     text-align: center;
     margin-top: 40px;
@@ -188,10 +189,34 @@ p {
       font-weight: bold;
       margin-bottom: 0;
     }
+  }
+}
 
+.early-acces {
+  background-color: $desaturatedBlue;
+  color: #FFF;
+  text-align: center;
+  padding: 40px 20px;
+  p, h2 {
+    color: #FFF;
+  }
+
+  input {
+    width: 93%;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid $desaturatedBlue;
+    border-radius: 3px;
+    font-family: $fontBody;
+    margin-bottom: 20px;
+  }
+  button {
+    width: 93%;
+    margin-bottom: 20px;
   }
 
 }
+
 
 /*** Media queries ***/
 
@@ -228,6 +253,36 @@ p {
 
   .header-text button {
     width: 30%;
+  }
+}
+
+.footer-site {
+  background-color: $darkBlue;
+  font-family: $fontBody;
+  color: #FFF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    li {
+      margin-bottom: 15px;
+      img {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .left {
+    margin-bottom: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    margin-bottom: 15px;
   }
 }
 
