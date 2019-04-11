@@ -143,6 +143,7 @@ p {
     border-bottom: 1px solid $moderateCyan;
     width: 53%;
     margin: 40px auto;
+    padding-bottom: 5px;
     a {
       text-decoration: none;
       color: $moderateCyan;
@@ -215,6 +216,22 @@ p {
     margin-bottom: 20px;
   }
 
+  .social {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      i {
+      color: #FFF;
+      border: 1px solid #FFF;
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      padding: 8px;
+      }
+    }
+  }
+
 }
 
 
@@ -222,7 +239,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 2.1em;
+    font-size: 2.3em;
   }
   .logo-and-nav {
     padding: 60px;
@@ -243,7 +260,7 @@ p {
   }
 
   .header-text {
-    padding: 40px 40px 0 40px;
+    padding: 80px 40px 0 40px;
   }
 
   .header-text input {
@@ -296,6 +313,117 @@ p {
     float: left;
     width: 50%;
     text-align: left;
-    padding: 100px 80px 0 80px;
+    padding: 120px 80px 0 0;
   }
+
+  .illustration2-container {
+    float: right;
+    width: 50%;
+    padding: 60px;
+  }
+
+  .middle-section-text {
+    float: left;
+    width: 50%;
+    padding: 0 60px 60px;
+    text-align: left;
+    h2 {
+      text-align: left;
+    }
+    .anchor-tag {
+      text-align: left;
+      width: 30%;
+      margin: 0;
+    }
+    .quote {
+      width: 70%;
+      margin-left: 0;
+      img {
+        width: 13%;
+      }
+      p:nth-child(3){
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  p {
+  font-size: 1.1em;
+  }
+
+  .early-acces {
+    padding: 60px;
+    text-align: left;
+   .early-acces-text {
+      float: left;
+      width: 50%;
+      h2 {
+        margin-top: 0;
+      }
+    }
+    .early-acces-input {
+      float: right;
+      width: 50%;
+      padding: 20px 20px 20px 80px;
+      button {
+        width: auto;
+      }
+    }
+  }
+
+  .footer-site {
+    padding-bottom: 0;
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+    ul {
+      margin: 0;
+    }
+    .footer-grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      ul {
+        li {
+          margin-bottom: 30px;
+        }
+      }
+      nav {
+        a {
+          margin-bottom: 30px;
+        }
+      }
+      .social {
+        text-align: center;
+        li {
+          display: inline-block;
+          margin-right: 15px;
+          i {
+          color: #FFF;
+          border: 1px solid #FFF;
+          border-radius: 50%;
+          height: 35px;
+          width: 35px;
+          padding: 8px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
 }
